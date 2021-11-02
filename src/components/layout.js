@@ -1,9 +1,10 @@
 import * as React from "react"
-import {Link, graphql} from "gatsby"
+import {Link} from "gatsby"
+import "../style.css"
 import "/Users/Venus Maletzky/gatsby-blog-starter-main/src/normalize.css"
 import "/Users/Venus Maletzky/gatsby-blog-starter-main/src/style.css"
 
-const Layout = ({ location, title, children, data }) => {
+const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
